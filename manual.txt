@@ -1,0 +1,24 @@
+실행 
+터미널 on 
+강다호 버전 : ssh -i /Users/kangdaho/Documents/AWS/team21_key.cer ubuntu@13.209.69.212
+진승범 버전 : ssh -i /Users/krc/Documents/AWS/team21_key.cer ubuntu@13.209.69.212
+
+source activate pytorch
+
+cd /home/ubuntu/.Project/code 
+
+
+python Team21_trains.py --model Unet++ --encoder efficientnet-b5 --n_epochs 200
+python Team21_trains.py --model Unet++ --encoder resnext50_32x4d --n_epochs 200
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+uvicorn backend:app --host0.0.0.0
+끄기 : 컨트롤 + c 
+
+
+python frontend_gradio.py

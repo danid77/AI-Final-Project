@@ -1,19 +1,15 @@
-실행 
-터미널 on 
+1. AWS 접속 방법
+1) 실행 - 터미널 on - 아래 코드 입력
 강다호 버전 : ssh -i /Users/kangdaho/Documents/AWS/team21_key.cer ubuntu@13.209.69.212
 진승범 버전 : ssh -i /Users/krc/Documents/AWS/team21_key.cer ubuntu@13.209.69.212
 
-source activate pytorch
-
+2. train 코드 경로
 cd /home/ubuntu/.Project/code 
 
-
+3. train python 파일 실행 코드 예시
+e.g.)
 python Team21_trains.py --model Unet++ --encoder efficientnet-b5 --n_epochs 200
 python Team21_trains.py --model Unet++ --encoder resnext50_32x4d --n_epochs 200
-
-
-
-
 
 ---------------------------------------------------------------------------------------------------
 
